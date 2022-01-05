@@ -3,9 +3,10 @@
 <html lang="en">
 <?php require('../includes/head.php');?>
 <?php require('../assets/style.php');?>
-    <body id="body1">
+<?php require('../includes/navregister.php');?>
+    <body>
         <br><br>
-        <fieldset class="container" id="field1">
+        <fieldset id="field1">
             <form class="container" method="POST">
                 <?php if(isset($errorMsg)){ echo '<p>'.$errorMsg.'</p>' ;}?>
                 <div class="mb-3">
