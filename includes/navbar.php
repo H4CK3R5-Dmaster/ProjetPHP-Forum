@@ -10,7 +10,7 @@
           <a class="nav-link active" aria-current="page" href="../inscription/signup.php">Sign Up</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sign in</a>
+          <a class="nav-link" href="../connexion/login.php">Sign in</a>
         </li>
       </ul>
       <form class="d-flex">

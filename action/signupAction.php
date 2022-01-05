@@ -30,10 +30,10 @@
 
                 header('Location: ../otherPages/home.php');
             } else {
-                $errorMsg = "Username allready exist..";
+                $errorMsg = "<script>alert('Username allready exist..')</script>";
             }
         } else {
-            $errorMsg = "Please complete all fields...";
+            $errorMsg = "<script>alert('Please complete all fields...')</script>";
         }
     }
 
