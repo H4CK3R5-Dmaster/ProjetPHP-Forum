@@ -13,7 +13,7 @@
         {
             $psw = password_hash($pass, PASSWORD_DEFAULT);
             $user_id = random_num(20);
-            $query = "INSERT INTO `users` (`username`,`mdp`,`email`,`id_user`, `isAdmin`) VALUES ('$name','$psw','$mail','$user_id', 'false')";
+            $query = "INSERT INTO `users` (`username`,`mdp`,`email`,`id_user`, `isAdmin`) VALUES ('$name','$psw','$mail','$user_id', 0)";
             mysqli_query($connect,$query);
             header("Location: ");
         }
