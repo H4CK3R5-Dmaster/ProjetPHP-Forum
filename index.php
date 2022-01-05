@@ -1,14 +1,1 @@
-<?php
-    include("./header.php");
-    
-
-
-?>
-    <body>
-       
-        <p>Bienvenue dans notre site !</p>
-        
-    </body>
-<?php
-    include("./footer.php")
-?>
+<a href="./inscription/signup.php">click</a>
