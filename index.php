@@ -1,12 +1,14 @@
 <?php
     include("./header.php");
-
+    
 
 
 ?>
-<body>
+    <body>
        
         <p>Bienvenue dans notre site !</p>
         
     </body>
-</html>
+<?php
+    include("./footer.php")
+?>
