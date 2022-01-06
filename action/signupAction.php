@@ -50,7 +50,7 @@
                 $errorMsg = "<script>alert('Username allready exist or mail allready exist..')</script>";
             }
         } else {
-            //sile formulaire n'est pas rempli ou si il manque des choses alors une popup alert apparaitra
+            //si le formulaire n'est pas rempli ou si il manque des choses alors une popup alert apparaitra
             $errorMsg = "<script>alert('Please complete all fields...')</script>";
         }
     }
