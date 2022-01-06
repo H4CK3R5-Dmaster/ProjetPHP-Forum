@@ -1,5 +1,7 @@
 <?php
+    //demarrage d'une session
     session_start();
+    //la database est requis
     require('db.php');
     if(isset($_POST['validate'])) {
         
