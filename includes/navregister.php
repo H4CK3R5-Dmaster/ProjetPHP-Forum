@@ -1,6 +1,6 @@
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="../index.php">Retour</a>
+    <button class="navbar-brand" href="../index.php">Retour</button>
   </div>
 </nav>
