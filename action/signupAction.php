@@ -3,38 +3,54 @@
     session_start();
     //la database est requis
     require('db.php');
+    //si validate (nom du bouton) apparait alors on fait le programme suivant
     if(isset($_POST['validate'])) {
         
-
+        //verifies si les inputs ne sont pas vide et si le confirm mdp = mdp
         if (!empty($_POST['email']) AND !empty($_POST['username']) AND !empty($_POST['password']) AND $_POST['password'] == $_POST['confirm']) {
+            //on recup les informations du formulaire
             $mail = htmlspecialchars($_POST['email']);
             $user = htmlspecialchars($_POST['username']);
+            //on crypte le mdp en md5
             $psw = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
+            //on va check si le user et le mail existe ou pas 1er temps on prepare la requete SELECT
             $chekUser = $bdd->prepare('SELECT username FROM users WHERE username = ?');
             $chekMail = $bdd->prepare('SELECT email FROM users WHERE email = ?');
+
+            //2e temps on execute avec les variables qui contiennent les informations user et mail de l'utilisateur
             $chekUser->execute(array($user));
             $chekMail->execute(array($mail));
 
+            //si le mail et le username n'existe pas dans la bdd alors on fait le programme suivant
             if ($chekUser->rowCount() == 0 && $chekMail->rowCount() == 0) {
+
+                //on prepare l'insertion dans la bdd
                 $insertUser = $bdd->prepare('INSERT INTO users(username, mdp, email)VALUES(?, ?, ?)');
+
+                //on execute l'insertion
                 $insertUser->execute(array($user, $psw, $mail));
 
+                //on va recup les informations pour la session donc on prepare le select et on l'execute
                 $getInfo = $bdd->prepare('SELECT ID, username, email FROM users WHERE username = ?');
                 $getInfo->execute(array($user));
 
                 $userInfos = $getInfo->fetch();
 
+                //on donne les infos à la session
                 $_SESSION['auth'] = true;
                 $_SESSION['ID'] = $userInfos["ID"];
                 $_SESSION['username'] = $userInfos["username"];
                 $_SESSION['mail'] = $userInfos['email'];
 
+                //on redirige vers le home
                 header('Location: ../otherPages/home.php');
             } else {
-                $errorMsg = "<script>alert('Username allready exist..')</script>";
+                //si le username et/ou le mail existe une popup alert apparaitra
+                $errorMsg = "<script>alert('Username allready exist or mail allready exist..')</script>";
             }
         } else {
+            //sile formulaire n'est pas rempli ou si il manque des choses alors une popup alert apparaitra
             $errorMsg = "<script>alert('Please complete all fields...')</script>";
         }
     }
