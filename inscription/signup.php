@@ -27,6 +27,8 @@
                     <input type="password" class="form-control" name="confirm" >
                 </div>
                 <button type="submit" class="btn btn-primary" name="validate">sign up</button>
+                <br><br>
+               <a href="../connexion/login.php"><p>I have an account</p></a>
             </form>
         </fieldset>
     </body>

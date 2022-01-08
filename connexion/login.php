@@ -1,3 +1,4 @@
+<?php require('../action/loginSys.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <?php require('../includes/head.php');?>
@@ -17,7 +18,9 @@
                     <input type="password" class="form-control" name="password">
                 </div>
                 
-                <button type="submit" class="btn btn-primary" name="validate">sign up</button>
+                <button type="submit" class="btn btn-primary" name="validat">sign in</button>
+                <br><br>
+               <a href="../inscription/signup.php"><p>I don't have an account</p></a>
             </form>
         </fieldset>
     </body>
