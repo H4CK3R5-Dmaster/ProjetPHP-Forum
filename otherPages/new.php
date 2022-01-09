@@ -5,7 +5,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<?php include('../assets/style.php'); include('../includes/head.php');  include('../includes/navwithprofil.php'); ?>
+<?php include('../assets/style.php'); include('../includes/head.php');  include('../includes/navarticles.php'); ?>
 
 <body>
     <form class="container" method="POST">
