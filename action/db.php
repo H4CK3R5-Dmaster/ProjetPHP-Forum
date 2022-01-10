@@ -1,4 +1,5 @@
 <?php
+    
     try {
         //$bdd sera la variable qui se connectera à la base de données
         $bdd = new PDO('mysql:host=localhost;dbname=baseForum;charset=utf8;', 'root', '');
