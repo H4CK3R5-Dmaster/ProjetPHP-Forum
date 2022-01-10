@@ -13,10 +13,7 @@
           <a class="nav-link" id="font" href="../connexion/login.php">Sign in</a>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" id="font" type="search" placeholder="Search" aria-label="Search">
-        <a class="btn btn-outline-success" id="font" type="submit">Search</a>
-      </form>
+      
     </div>
   </div>
 </nav>
