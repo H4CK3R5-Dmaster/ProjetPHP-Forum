@@ -1,9 +1,21 @@
+<?php
+    require('../action/security.php');
+    require('../action/publishSYS.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-<?php include('../includes/head.php'); include('../includes/navwithprofil.php'); include('../assets/style.php');?>
+<?php include('../assets/style.php'); include('../includes/head.php');  include('../includes/navarticles.php'); ?>
+
 <body>
     <form class="container" method="POST">
-        <?php if(isset($errorMsg)){ echo '<p>'.$errorMsg.'</p>' ;}?>
+        <?php 
+            if(isset($errorMsg)){ 
+                echo '<p>'.$errorMsg.'</p>' ;
+            } elseif(isset($sucessPublish)) {
+                echo"<p>".$sucessPublish."</p>";
+            }
+        ?>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Title of article</label>
             <input type="text" class="form-control" name="titre">
