@@ -16,6 +16,7 @@
                         <p class="card-text"><?php echo $articles['description'];?></p>
                         <a href="#" class="btn btn-primary">Go to articles</a>
                         <a href="../otherPages/edit.php?id=<?php echo $articles['id'];?>" class="btn btn-warning">Modify article</a>
+                        <a href="/action/delete.php?id=<?php echo $articles['id'];?>" class="btn btn-danger">Delete article</a>
                     </div>
                 </div>
                 <br>

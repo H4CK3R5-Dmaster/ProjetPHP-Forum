@@ -7,10 +7,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" id="font" href="../inscription/signup.php">Sign Up</a>
+          <a class="nav-link active btn-outline-success btn" aria-current="page" id="font" href="../inscription/signup.php">Sign Up</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="font" href="../connexion/login.php">Sign in</a>
+          <a class="nav-link btn-outline-success btn" id="font" href="../connexion/login.php">Sign in</a>
         </li>
       </ul>
       
