@@ -6,6 +6,6 @@
     //on detruit la session
     session_destroy();
     //on redirige vers le login
-    header("Location: ../connexion/login.php");
+    header("Location: ../index.php");
 
 ?>
