@@ -1,5 +1,5 @@
 <?php
-    require('../system/connexion.php');
+    require('../../action/loginSys.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">

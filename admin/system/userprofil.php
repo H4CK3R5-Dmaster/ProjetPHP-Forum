@@ -1,11 +1,11 @@
 <?php
     require('db.php');
 
-    if (isset($_GET['id']) AND !empty($_GET['id']) OR !empty($_GET['id']) AND isset($_GET['id'])) {
+    if (isset($_GET['id']) AND !empty($_GET['id'])) {
         $id_userss = $_GET['id'];
         
         
-        $checking = $bdd->prepare('SELECT * FROM staff WHERE id = ?');
+        $checking = $bdd->prepare('SELECT * FROM users WHERE id = ?');
         $checking->execute(array($id_userss));
         
         
@@ -13,7 +13,7 @@
             $userInfos = $checking->fetch();
             
             $user_username = $userInfos['username'] ;
-            $id = $userInfos['id'] ;
+            $id = $userInfos['ID'] ;
             $email = $userInfos['email'] ;
 
             $hisArticles = $bdd->prepare('SELECT * FROM articles WHERE id_user = ? ORDER BY id DESC');

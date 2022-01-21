@@ -29,7 +29,12 @@
                     $_SESSION['username'] = $userInfos["username"];
                     $_SESSION['mail'] = $userInfos['email'];
                     //on redirige vers le home
-                    header('Location: ../otherPages/home.php');
+                    if ($_SESSION['username'] == "Admin") {
+                        header('Location: ../otherPages/home.php');
+                    } else {
+                        header('Location: ../otherPages/home.php');
+                    }
+                    
 
                 } else {
                     $errorMsg = "<script>alert('Wrong password...')</script>";

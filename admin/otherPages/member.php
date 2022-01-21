@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include('../system/showmember.php');
 ?>
 
@@ -14,7 +15,14 @@
                 <div class="card container">
                     <div class="card-header">
                         <?= $user['username'];?>
-                        <a href="../system/bannir.php?ID=<?= $user['ID'];?>" class="btn btn-danger col">BAN</a>
+                        <?php
+                            if ($user['username'] != "Admin") {
+                                ?>
+                                    <a href="../system/bannir.php?ID=<?= $user['ID'];?>" class="btn btn-danger col">BAN</a>
+                                <?php
+                            }
+                        ?>
+                        
                     </div>
                     
                 </div>
