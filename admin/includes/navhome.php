@@ -2,12 +2,12 @@
   <div class="container-fluid">
     <a class="nav-link active btn btn-outline-success"  id="font" href="#">new article</a>
     <a class="nav-link active btn btn-outline-success"  id="font" href="#">my article</a>
-    <a class="nav-link active btn btn-outline-success"  id="font" href="#">members</a>
+    <a class="nav-link active btn btn-outline-success"  id="font" href="../otherPages/member.php">members</a>
 
     <?php
       if (isset($_SESSION['auth'])) {
         ?>
-        
+        <a class="nav-link active btn btn-outline-success" href="../otherPages/profil.php?id=<?= $_SESSION['id'];?>">my account</a>
         <a class="nav-link active btn-outline-success btn"  id="font" href="../../action/logout.php">logout</a>
         
         <?php
