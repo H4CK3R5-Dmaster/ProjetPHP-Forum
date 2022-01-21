@@ -26,7 +26,7 @@
                         <?= $articles['contenu']; ?>
                         </div>
                         <div class="card-footer">
-                            Published by <?= $articles['user_username']; ?> at <?= $articles['date_publish']; ?>
+                            Published by <a href="profil.php?ID=<?= $articles['id_user'];?>"><?= $articles['user_username']; ?></a> at <?= $articles['date_publish']; ?>
                         </div>
                     </div>
                 </div>

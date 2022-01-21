@@ -1,13 +1,13 @@
+
 <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
   <div class="container-fluid">
-    <a class="nav-link active btn btn-outline-success" href="#">my account</a>
     <a class="nav-link active btn btn-outline-success"  id="font" href="../otherPages/new.php">new article</a>
     <a class="nav-link active btn btn-outline-success"  id="font" href="../otherPages/user_articles.php">my article</a>
 
     <?php
       if (isset($_SESSION['auth'])) {
         ?>
-        
+        <a class="nav-link active btn btn-outline-success" href="../otherPages/profil.php?ID=<?= $_SESSION['ID'];?>">my account</a>
         <a class="nav-link active btn-outline-success btn"  id="font" href="../action/logout.php">logout</a>
         
         <?php
