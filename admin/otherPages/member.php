@@ -7,7 +7,7 @@
 <?php include('../includes/head.php');?>
 <body>
     <?php include('../includes/navreturn.php');?>
-
+    <br>
     <?php 
         while($user = $recup->fetch()){
             ?>
