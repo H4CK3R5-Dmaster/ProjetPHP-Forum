@@ -30,6 +30,7 @@
                     <p>content : <?= $content;?></p>
                     <hr>
                     <small>username : <a href="profil.php?id=<?= $id_users;?>"><?= $users;?></a>  <br> date Publication : <?= $date;?></small>
+                    <a href="../otherPages/edit.php?id=<?= $id;?>" class="btn btn-warning">Modify article</a>
                     <a href="../system/delete.php?id=<?= $id;?>" class="btn btn-danger">Delete article</a>
                 </section>
                 <br><br>

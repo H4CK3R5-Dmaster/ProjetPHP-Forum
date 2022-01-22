@@ -1,6 +1,6 @@
 <?php
     require('../../action/security.php');
-    require('../../action/getandedit.php');
+    require('../system/getandedit.php');
     require('../../action/editingArticle.php');
 
 ?>

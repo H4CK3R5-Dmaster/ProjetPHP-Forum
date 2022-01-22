@@ -29,7 +29,7 @@
                         </div>
                         <div class="card-footer">
                             Published by <a href="profil.php?id=<?= $articles['id_user'];?>"><?= $articles['user_username']; ?></a> at <?= $articles['date_publish']; ?>
-                            <a href="../otherPages/edit.php?id=<?php echo $articles['id'];?>" class="btn btn-warning">Modify article</a>
+                            
                         </div>
                     </div>
                 </div>
