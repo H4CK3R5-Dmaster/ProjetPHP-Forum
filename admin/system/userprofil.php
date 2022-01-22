@@ -15,6 +15,7 @@
             $user_username = $userInfos['username'] ;
             $id = $userInfos['ID'] ;
             $email = $userInfos['email'] ;
+            
 
             $hisArticles = $bdd->prepare('SELECT * FROM articles WHERE id_user = ? ORDER BY id DESC');
             $hisArticles->execute(array($id_userss));
