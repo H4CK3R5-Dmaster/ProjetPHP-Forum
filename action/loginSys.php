@@ -28,6 +28,7 @@
                     $_SESSION['ID'] = $userInfos["ID"];
                     $_SESSION['username'] = $userInfos["username"];
                     $_SESSION['mail'] = $userInfos['email'];
+                    $_SESSION['avatar'] = $userInfos['avatar'];
                     //on redirige vers le home
                     if ($_SESSION['username'] == "Admin") {
                         header('Location: ../otherPages/home.php');

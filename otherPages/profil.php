@@ -1,6 +1,7 @@
 <?php
     session_start();
     require('../action/showUserProfil.php');
+    require('../action/getallInfo.php');
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +18,17 @@
             ?>
             <div class="card bg-primary container">
                 <div class="card-header">
+                    <?php
+                        if (!empty($User['avatar']) AND $_GET['ID'] == $_SESSION['ID']) {
+                            ?>
+                                <img src="../action/avatar/<?php echo $User['avatar'];?>" width="150" >
+                            <?php
+                        } else {
+                            ?>
+                                <img src="../action/avatar/<?php echo $User2['avatar'];?>" width="150" >
+                            <?php
+                        }
+                    ?>
                     <h4>@<?= $user_username;?></h4>
                     <hr>
                     <p>email : <?= $email;?> <br> id : <?= $id; ?></p>

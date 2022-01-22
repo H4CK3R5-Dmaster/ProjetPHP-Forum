@@ -1,6 +1,8 @@
 <?php
+
     require('../action/security.php');
     require('../action/articlesshowing.php');
+    
 
 ?>
 <!DOCTYPE html>
