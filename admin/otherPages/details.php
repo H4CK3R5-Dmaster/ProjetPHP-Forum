@@ -29,7 +29,7 @@
                     <hr>
                     <p>content : <?= $content;?></p>
                     <hr>
-                    <small>username : <a href="profil.php?ID=<?= $id_users;?>"><?= $users;?></a>  <br> date Publication : <?= $date;?></small>
+                    <small>username : <a href="profil.php?id=<?= $id_users;?>"><?= $users;?></a>  <br> date Publication : <?= $date;?></small>
                     <a href="../system/delete.php?id=<?= $id;?>" class="btn btn-danger">Delete article</a>
                 </section>
                 <br><br>

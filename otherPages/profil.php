@@ -20,7 +20,14 @@
                     <h4>@<?= $user_username;?></h4>
                     <hr>
                     <p>email : <?= $email;?> <br> id : <?= $id; ?></p>
-                    <a href="./modify.php" class="btn btn-warning">modify profil</a>
+                    <?php
+                        if ($_GET['ID'] == $_SESSION['ID']) {
+                            ?>
+                            <a href="./modify.php" class="btn btn-warning">modify profil</a>.
+                            <?php
+                        }
+                    ?>
+                    
                 </div>
             </div>
             <br>
