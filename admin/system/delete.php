@@ -10,11 +10,11 @@
 
         if ($checkArticle->rowCount() > 0) {
             $user = $checkArticle->fetch();
-            if ($user['id_user'] == $_SESSION['ID']) {
+            if ($user['id_user'] == $_SESSION['ID'] || $_SESSION['username'] == "Admin") {
                 $delete = $bdd->prepare('DELETE FROM articles WHERE id = ?');
                 $delete->execute(array($getId));
                 
-                header("Location: ../otherPages/user_articles.php");
+                header("Location: ../otherPages/home.php");
 
             } else {
                 $errorMsg = "<script>alert('You can't delete this article...')</script>";

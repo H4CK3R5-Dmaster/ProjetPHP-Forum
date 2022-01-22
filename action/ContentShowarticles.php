@@ -14,6 +14,7 @@
             $id_users = $Infos['id_user'];
             $users = $Infos['user_username'];
             $date = $Infos['date_publish'];
+            $id = $Infos['id'];
 
         } else {
             $errorMsg = "<script>alert('No article found...')</script>";

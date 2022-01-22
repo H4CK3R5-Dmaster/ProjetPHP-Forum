@@ -9,7 +9,10 @@
 <body>
     <?php include('../includes/navreturn.php');?>
     <br>
-    <?php 
+    <?php
+        if (isset($errorMsg)) {
+            echo $errorMsg;
+        }
         while($user = $recup->fetch()){
             ?>
                 <div class="card container">
@@ -18,7 +21,7 @@
                         <?php
                             if ($user['username'] != "Admin") {
                                 ?>
-                                    <a href="../system/bannir.php?ID=<?= $user['ID'];?>" class="btn btn-danger col">BAN</a>
+                                    <a href="../system/ban.php?id=<?= $user['ID'];?>" class="btn btn-danger col">BAN</a>
                                 <?php
                             }
                         ?>

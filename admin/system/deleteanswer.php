@@ -5,16 +5,16 @@
     if(isset($_GET['id']) AND !empty($_GET['id'])){
 
         $getId = $_GET['id'];
-        $checkArticle = $bdd->prepare('SELECT id_user FROM articles WHERE id = ?');
+        $checkArticle = $bdd->prepare('SELECT id_user FROM answer WHERE id = ?');
         $checkArticle->execute(array($getId));
 
         if ($checkArticle->rowCount() > 0) {
             $user = $checkArticle->fetch();
-            if ($user['id_user'] == $_SESSION['ID']) {
-                $delete = $bdd->prepare('DELETE FROM articles WHERE id = ?');
+            if ($user['id_user'] == $_SESSION['ID'] || $_SESSION['username'] == "Admin") {
+                $delete = $bdd->prepare('DELETE FROM answer WHERE id = ?');
                 $delete->execute(array($getId));
                 
-                header("Location: ../otherPages/user_articles.php");
+                header("Location: ../otherPages/home.php");
 
             } else {
                 $errorMsg = "<script>alert('You can't delete this article...')</script>";
