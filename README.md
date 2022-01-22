@@ -1,1 +1,1 @@
-# ProjetPHP-Forum
+<img src="assets/img/logo.png">

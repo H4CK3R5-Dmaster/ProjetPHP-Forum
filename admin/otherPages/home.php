@@ -8,7 +8,8 @@
 <html lang="en">
 <?php include('../includes/head.php');?>
 <body>
-<?php include('../includes/navhome.php');?>
+<?php include('../includes/navhome.php');?><br>
+<h1 class="display-3">Welcome <?= $_SESSION['username'];?></h1>
 <br>
     <?php
         while($articles = $allArticles->fetch()){
