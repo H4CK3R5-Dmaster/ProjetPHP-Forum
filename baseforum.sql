@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : sam. 22 jan. 2022 à 17:16
+-- Généré le : sam. 22 jan. 2022 à 19:06
 -- Version du serveur : 10.4.22-MariaDB
 -- Version de PHP : 8.1.1
 
@@ -70,7 +70,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`ID`, `username`, `mdp`, `email`, `avatar`) VALUES
-(1, 'Admin', '$2y$10$F8.IkZnU0QHvWHnz6Ys/lO6LBphtokmoACOfERyXKF7VrSrBi2v6e', 'admin@admin.com', 'serveur5-300x225.png');
+(1, 'Admin', '$2y$10$F8.IkZnU0QHvWHnz6Ys/lO6LBphtokmoACOfERyXKF7VrSrBi2v6e', 'admin@admin.com', '');
 
 --
 -- Index pour les tables déchargées
@@ -102,19 +102,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `answer`
 --
 ALTER TABLE `answer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT pour la table `articles`
 --
 ALTER TABLE `articles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
