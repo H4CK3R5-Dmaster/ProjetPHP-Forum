@@ -11,13 +11,11 @@
 <p align="left">
     <h2>Forum features</h2>
 </p>
-<p align="left">
- ###Part users :
-    * You can create your account or connect to your account<br>
-    * You can share many articles and reply to articles<br>
-    * You can modify or delete your article<br>
-    * You can put a profile picture<br>
-    * You can modify your informations<br>
-    * You can go see the profiles of others <br>
-    
-</p>
+
+###Part users :<br>
+* You can create your account or connect to your account<br>
+* You can share many articles and reply to articles<br>
+* You can modify or delete your article<br>
+* You can put a profile picture<br>
+* You can modify your informations<br>
+* You can go see the profiles of others <br>
