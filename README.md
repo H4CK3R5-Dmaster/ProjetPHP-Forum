@@ -34,3 +34,8 @@
 * You can go see the profiles of others <br>
 * You can ban everyone <br>
 * You have many more options <br>
+
+<p align="left">
+    <h3>HOME PAGE EXAMPLE<h3>
+    <img src="forReadme/Capture.PNG" width="420" title="hover text">
+</p>
