@@ -5,7 +5,8 @@
 <br>
 <p align="center">
     WELCOME TO THE EXPLANATIONS OF THE FORUM<br>
-    CODED IN FULL PHP
+    CODED IN FULL PHP<br>
+    CREATED BY FEKAIER SEIF AND FOURNIE WILLIAM
 </p>
 <p align="left">
     <h2>Forum features</h2>
