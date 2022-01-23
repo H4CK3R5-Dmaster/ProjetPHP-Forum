@@ -6,7 +6,7 @@
 <p align="center">
     WELCOME TO THE EXPLANATIONS OF THE FORUM<br>
     CODED IN FULL PHP<br>
-    CREATED BY FEKAIER SEIF AND FOURNIE WILLIAM
+    <p color="blue">CREATED BY FEKAIER SEIF AND FOURNIE WILLIAM</p>
 </p>
 <p align="left">
     <h2>Forum features</h2>
