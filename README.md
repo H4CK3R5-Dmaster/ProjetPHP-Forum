@@ -12,7 +12,7 @@
     <h2>Forum features</h2>
 </p>
 
-###Part users :<br>
+### Part users :<br>
 * You can create your account or connect to your account<br>
 * You can share many articles and reply to articles<br>
 * You can modify or delete your article<br>
