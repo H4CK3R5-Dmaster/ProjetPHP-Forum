@@ -18,15 +18,30 @@
             ?>
             <div class="card bg-primary container">
                 <div class="card-header">
-                    <?php
-                        if (!empty($User['avatar']) AND $_GET['ID'] == $_SESSION['ID']) {
-                            ?>
-                                <img src="../action/avatar/<?php echo $User['avatar'];?>" width="150" >
-                            <?php
+                <?php   
+                        if(empty($User['avatar']) AND empty($User2['avatar']) AND $_GET['ID'] == $_SESSION['ID']){
+
+                        
+                            if (empty($User['avatar']) AND $_GET['ID'] == $_SESSION['ID']) {
+                                ?>
+                                    <img src="../action/avatar/default.jpg" width="150" >
+                                <?php
+                            } else {
+                                ?>
+                                    <img src="../action/avatar/default.jpg" width="150" >
+                                <?php
+                            }
                         } else {
-                            ?>
-                                <img src="../action/avatar/<?php echo $User2['avatar'];?>" width="150" >
-                            <?php
+                            
+                            if (!empty($User['avatar']) AND $_GET['ID'] == $_SESSION['ID']) {
+                                ?>
+                                    <img src="../action/avatar/<?php echo $User['avatar'];?>" width="150" >
+                                <?php
+                            } else {
+                                ?>
+                                    <img src="../action/avatar/<?php echo $User2['avatar'];?>" width="150" >
+                                <?php
+                            }
                         }
                     ?>
                     <h4>@<?= $user_username;?></h4>
