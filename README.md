@@ -9,7 +9,7 @@
 </p>
 
 ```diff
-@@ CREATED BY FEKAIER SEIF AND FOURNIE WILLIAM
+@@ CREATED BY FEKAIER SEIF AND FOURNIE WILLIAM @@
 ```
 <p align="left">
     <h2>Forum features</h2>
