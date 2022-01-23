@@ -27,6 +27,8 @@
             } else {
                 $errorMsg = "<script>alert('Username or mail allready exist....')</script>";
             }
+        } else {
+            $errorMsg = "<script>alert('at least one of the 3 fields is empty....')</script>";
         }
     }
 
