@@ -37,5 +37,16 @@
 
 <p align="left">
     <h3>HOME PAGE EXAMPLE<h3>
-    <img src="forReadme/Capture.PNG" width="500" title="hover text">
+    <img src="forReadme/Capture.PNG" width="500" title="hover text"><br>
 </p>
+<p align="center">
+    <h3>DISTRIBUTION OF TASKS</h3>
+</p>
+
+### FEKAIER SEIF :
+* Back end
+* connection with the front-end
+* Tests
+
+### FOURNIE WILLIAM :
+* Front end
