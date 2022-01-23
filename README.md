@@ -45,8 +45,7 @@
 
 ### FEKAIER SEIF :
 * Back end
+* Front end
 * connection with the front-end
 * Tests
 
-### FOURNIE WILLIAM :
-* Front end
