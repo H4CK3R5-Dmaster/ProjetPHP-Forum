@@ -4,7 +4,8 @@
 </p>
 <br>
 <p align="center">
-    WELCOME TO THE EXPLANATIONS OF THE FORUM
+    WELCOME TO THE EXPLANATIONS OF THE FORUM<br>
+    CODED IN FULL PHP
 </p>
 <p align="left">
     <h2>Forum features</h2>
