@@ -18,7 +18,19 @@
 ### Part users :<br>
 * You can create your account or connect to your account<br>
 * You can share many articles and reply to articles<br>
+* You can search a special article <br>
 * You can modify or delete your article<br>
 * You can put a profile picture<br>
 * You can modify your informations<br>
 * You can go see the profiles of others <br>
+
+### Part Admin : <br>
+* You can connect to your account in a special login page<br>
+* You can share many articles and reply to articles<br>
+* You can search a special article <br>
+* You can modify or delete your article and those of others users<br>
+* You can put a profile picture<br>
+* You can modify your informations<br>
+* You can go see the profiles of others <br>
+* You can ban everyone <br>
+* You have many more options <br>
