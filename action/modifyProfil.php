@@ -20,6 +20,9 @@
                 $update = $bdd->prepare('UPDATE users SET email = ?, username = ?, mdp = ? WHERE id = ?');
                 $update->execute(array($mail, $username, $pass, $_SESSION['ID']));
 
+                $_SESSION['mail'] = $mail;
+                $_SESSION['username'] = $username;
+
                 header('Location: ../otherPages/home.php');
             } else {
                 $errorMsg = "<script>alert('Username or mail allready exist....')</script>";
