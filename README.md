@@ -6,7 +6,11 @@
 <p align="center">
     WELCOME TO THE EXPLANATIONS OF THE FORUM<br>
     CODED IN FULL PHP<br>
-    <p align="center" fill="#4D3CA6">CREATED BY FEKAIER SEIF AND FOURNIE WILLIAM</p>
+    <p align="center" fill="#4D3CA6">
+        ```diff
+        @@ CREATED BY FEKAIER SEIF AND FOURNIE WILLIAM
+        ```
+    </p>
 </p>
 <p align="left">
     <h2>Forum features</h2>
