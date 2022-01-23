@@ -12,12 +12,11 @@
     <h2>Forum features</h2>
 </p>
 <p align="left">
-    ```
-    1) You can create your account or connect to your account<br>
-    2) You can share many articles and reply to articles<br>
-    3) You can modify or delete your article<br>
-    4) You can put a profile picture<br>
-    5) You can modify your informations<br>
-    6) You can go see the profiles of others <br>
-    ```
+    * You can create your account or connect to your account<br>
+    * You can share many articles and reply to articles<br>
+    * You can modify or delete your article<br>
+    * You can put a profile picture<br>
+    * You can modify your informations<br>
+    * You can go see the profiles of others <br>
+    
 </p>
