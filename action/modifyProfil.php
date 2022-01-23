@@ -18,7 +18,9 @@
                 $userInfo = $cheker->fetch();
 
                 $update = $bdd->prepare('UPDATE users SET email = ?, username = ?, mdp = ? WHERE id = ?');
+                $updater = $bdd->prepare('UPDATE articles SET user_username = ? WHERE id_user = ?');
                 $update->execute(array($mail, $username, $pass, $_SESSION['ID']));
+                $updater->execute(array($username, $_SESSION['ID']));
 
                 $_SESSION['mail'] = $mail;
                 $_SESSION['username'] = $username;
