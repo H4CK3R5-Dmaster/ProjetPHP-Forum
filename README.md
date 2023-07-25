@@ -33,12 +33,7 @@
 * You can ban everyone <br>
 * You have many more options <br>
 
-<p align="left">
-    <h3>HOME PAGE EXAMPLE<h3>
-    <img src="forReadme/Capture.PNG" width="500" title="hover text"><br>
-</p>
-<p align="center">
-    <h3>DISTRIBUTION OF TASKS</h3>
+
 </p>
 
 
