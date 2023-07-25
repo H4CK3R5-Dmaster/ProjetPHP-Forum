@@ -8,9 +8,7 @@
     CODED IN FULL PHP<br>
 </p>
 
-```diff
-@@ CREATED BY FEKAIER SEIF AND FOURNIE WILLIAM @@
-```
+
 <p align="left">
     <h2>Forum features</h2>
 </p>
@@ -43,9 +41,5 @@
     <h3>DISTRIBUTION OF TASKS</h3>
 </p>
 
-### FEKAIER SEIF :
-* Back end
-* Front end
-* connection with the front-end
-* Tests
+
 
